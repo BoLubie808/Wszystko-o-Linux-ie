@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<title>Wszystko o Linux'ie</title>
+	<!--[if gte IE 9]
+		<style type="text/css">.gradient {filter: none;}</style>
+		<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<![endif]-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Kacper Gajda">
+	<meta name="description" content="Strona poświęcona GNU/Linux">
+	<meta name="keywords"
+		content="Linux, GNU, Otwarte oprogramowanie, system operacyjny, GNU/Linux, Dystrybucje Linuksa, Linus Torvalds, Xfce, GNOME, KDE, Tiling, środowisko graficzne, Terminal, UNIX, Oprogramowanie, menedżer okien, X Window System, GTK+, GDK">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="fontello/fontello.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="icon" href="iconfinder_Terminal_566022.png" type="image/png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script>
+		jQuery(function ($) {
+			$.scrollTo(0);
+
+			$('.scrollup').click(function () {
+				$.scrollTo($('body'), 1500);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="iconfinder_Terminal_566022.png" width="50" height="50"
+						class="Icon d-inline-block mr-1 align-bottom" alt="Terminal" style="margin-top: 20px;" />
+				</a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+					data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+					aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i></button>
+				<div style="margin-right: 20%;" class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="dystrybucje.html">Dystrybucje</a></li>
+						<li class="nav-item"><a class="nav-link" href="terminal.html">Terminal</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Page Header -->
+		<header class="masthead">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-10 mx-auto">
+						<div class="site-heading">
+							<br />
+							<h1 style="margin-right: 25%;">Home</h1>
+							<br />
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<a href="#" class="Icon scrollup"></a>
+			<div class="columns">
+				<div class="column">
+					<a href="index.html">
+						<img class="Icon col-lg-7 col-md-10" src="iconfinder_desktop_1287529.png" title="Home" />
+					</a>
+				</div>
+				<div class="column">
+					<a href="terminal.html">
+						<img class="Icon col-lg-7 col-md-10" src="iconfinder_gksu-root-terminal_3246759.png"
+							title="Terminal" alt="Terminal" />
+					</a>
+				</div>
+				<div class="column">
+					<a href="dystrybucje.html">
+						<img class="Icon col-lg-7 col-md-10" src="iconfinder_download_1055068.png" title="Dystrybucje"
+							alt="Dystrybucje" />
+					</a>
+				</div>
+			</div>
+			<article>
+				<h2>
+					Wszystko o Linux'ie
+				</h2>
+				<p>
+					Linux - rodzina uniksopodobnych systemów operacyjnych opartych na jądrze Linux. Linux jest jednym z
+					przykładów wolnego i otwartego oprogramowania jego kod źródłowy może być dowolnie wykorzystywany,
+					modyfikowany i rozpowszechniany. Od kwietnia 2017 roku Android (a tym samym Linux) oficjalnie jest
+					najpopularniejszym systemem operacyjnym na świecie.
+				</p>
+			</article>
+			<br />
+			<br />
+			<article>
+				<h2>
+					Linus Torvalds, twórca jądra Linuks
+				</h2>
+				<p>
+					Historia Linuksa rozpoczęła się w 1991 roku, kiedy to fiński programista, Linus Torvalds
+					poinformował na grupie dyskusyjnej Miniksa o hobbystycznym tworzeniu przez siebie niedużego, wolnego
+					systemu operacyjnego, przeznaczonego dla procesorów z rodzin i386 oraz i486.
+				</p>
+				<p>
+					<br />
+					<sub>
+						<i class="icon-quote-left"></i>
+					</sub>
+					Tworzę system operacyjny (tylko hobby, nie będzie wielki i profesjonalny jak gnu) dla klonów AT
+					na
+					386.
+					<sup>
+						<i class="icon-quote-right"></i>
+					</sup>
+					<br />
+				</p>
+				<p>
+					<br />
+					Linus stworzył jednak tylko jądro, pełny system operacyjny potrzebował jeszcze powłoki systemowej,
+					bibliotek itp.
+					<br />
+					W roli większości z tych narzędzi użyto oprogramowania GNU, co jednak w przypadku niektórych
+					komponentów systemu wymagało poważnych zmian, niekiedy finansowanych przez GNU, niekiedy
+					dokonanych już wcześniej przez Torvaldsa.
+					<br />
+					<br />
+					Dużo pracy wymagało także zintegrowanie systemu do postaci dystrybucji, które umożliwiały
+					zainstalowanie go w stosunkowo prosty sposób.
+				</p>
+			</article>
+			<br />
+			<br />
+			<article>
+				<h2>
+					Gry a Linux
+				</h2>
+				<p>
+					Obecnie na tylko jednego z Linuxów, w jednym sklepie jest ponad 192 187 aplikacji, z czego 15,5% to
+					gry (Linux Android). Sama liczba pobrań aplikacji przekracza 34 294 603 185. Jeśli chodzi o
+					pozostałe dystrybucje Linuxa to przykładowo 10 na 25 gier w „Popularnych” („Popular”) serwisu
+					GOG.com ma wersję na Linuxa. W serwisie Steam jest 2970 gier z potwierdzonym działaniem na Linuksie.
+					Istnieją także inne katalogi gier. Popularne „silniki” bądź biblioteki graficzne do tworzenia gier
+					pozwalają tworzyć duże i mniejsze produkcje na Linuxa - jak np. Unity czy SDL.
+					<br />
+					<br />
+					Najstarsza uniwersalna wyszukiwarka opisów gier, w rankingu liczby gier na lata 2010-2018 podaje dla
+					Linuxa 11 369 tytułów, podczas gdy dla konkurencyjnych platform jest ich co najmniej kilkakrotnie
+					mniej.
+					<br />
+					<br />
+					Linux współcześnie obsługuje też bez dodatków zazwyczaj więcej kontrolerów niż wiele znanych
+					systemów. Nie tylko nadal wspiera tzw. GamePort, ale również najnowsze kontrolery Sony.
+				</p>
+			</article>
+			<article>
+				<img style="margin-top: 25px;" align="right" class="col-lg-6 col-md-7" src="ui29u5n0ixj21.png" />
+				<br />
+				<p align="left">
+					<h2>Proton czyli wielki ukłon w stronę Linux’a</h2>
+					Proton jest zmodyfikowaną wersją Wine. Narzędzie to powstało we współpracy z firmą CodeWeavers.
+					Posiada ono natywną obsługę Steamworks oraz OpenVR. Natomiast implementacja DirectX 11 i 12 została
+					przeprowadzona z użyciem Vulkan’a. Poprawiona została również obsługa trybu pełnoekranowego, która
+					nie wymaga już stosowania wirtualnych pulpitów. Valve zadbało również o poprawną obsługę wszystkich
+					kontrolerów współpracujących ze Steam’em. Poprawiono również wydajność gier korzystających z
+					wielowątkowości.
+					Z biegiem czasu będzie ona uzupełniana o kolejne tytuły. Jednocześnie firma zachęca graczy do
+					testowania narzędzia Proton i uruchomienia gier.
+				</p>
+			</article>
+			<br />
+			<hr />
+			<br />
+			<article>
+				<h2>
+					Kwestie prawne
+				</h2>
+				<p>
+					Oprogramowanie dla Linuksa jest najczęściej otwarte i wolne. Duża część kodu typowej dystrybucji
+					jest objęta takimi licencjami jak GPL, LGPL, BSD i podobnymi.
+					<br />
+					Linux jest zastrzeżonym znakiem towarowym należącym do Linusa Torvaldsa. Prawa do niego są udzielane
+					przez Linux Foundation
+				</p>
+				<img class="col-lg-12" src="opensource.png"/>
+			</article>
+			<article>
+				<h2>
+					Interfejs graficzny
+				</h2>
+				<p>
+					Graficzny interfejs użytkownika GUI nie jest w Linuksie integralną częścią systemu operacyjnego,
+					lecz dodatkowym zbiorem programów. W zależności od stopnia zaawansowania i integracji użytych
+					rozwiązań, dostępne GUI możemy podzielić na małe menedżery okien oraz duże środowiska graficzne.
+				</p>
+				<br />
+				<h3>
+					Małe menedżery okien
+				</h3>
+				<p>
+					Tradycyjne GUI dla Linuksa bazuje na osobnym menedżerze okien, takim jak Fluxbox, FVWM,
+					Enlightenment lub Window Maker i zestawie najróżniejszych aplikacji, uruchamianych za jego pomocą.
+					Menedżer okien pozwala na kontrolowanie położenia i wyglądu okien indywidualnych aplikacji oraz na
+					interakcję z X Window System.
+					<br />
+					<br />
+					Zaletą korzystania z niezależnego menedżera okien jest prostota (z punktu widzenia programistów i
+					doświadczonych użytkowników) oraz szybkość i niezawodność ich działania. Ponadto w porównaniu z
+					dużymi środowiskami graficznymi takimi jak GNOME lub KDE, niezależne menedżery w mniejszym stopniu
+					angażują zasoby takie jak procesor, pamięć i miejsce na dysku twardym. Użytkownicy, którzy preferują
+					pracę w terminalu, chętnie pracują w minimalistycznych środowiskach graficznych; menedżer okien, sam
+					w sobie, ma im przede wszystkim zapewnić możliwość otwierania okien emulatorów terminali
+					komputerowych.
+				</p>
+				<br />
+				<h3>
+					Duże środowiska graficzne
+				</h3>
+				<p>
+					Używanie małych menedżerów okien staje się coraz mniej popularne wraz ze wzrostem większych
+					środowisk graficznych. Są to zintegrowane sposoby na wygodną pracę, które starają się zapewnić
+					interfejs równie łatwy w obsłudze, jak ten z Mac OS lub Microsoft Windows. Łączą one menedżer
+					okien z pakietem standardowych aplikacji, które są łatwe w obsłudze nawet z punktu widzenia
+					początkujących użytkowników.
+					<br />
+					Jednym z pierwszych rozpowszechnionych środowisk graficznych było CDE, które nie stało się popularne
+					na Linuksie ze względu na koszty i ograniczenia licencyjne. W 1996 powstało KDE, a po nim, w 1997
+					roku, GNOME. Xfce jest trochę mniejszym projektem, który również powstał w 1997 i skupia się na
+					szybkości i możliwości konfiguracji.
+					<br />
+					Obecnie rozwiązaniami dominującymi są GNOME i KDE, zazwyczaj instaluje się je standardowo na
+					systemach linuksowych. Każde z nich oferuje:
+				</p>
+				<ul>
+					<li>
+						Dla programistów zestaw standardowych API oraz środowisko programistyczne
+					</li>
+					<li>
+						Dostępność w wielu językach i wsparcie dla tłumaczy
+					</li>
+
+					<li>
+						Możliwość dostosowania systemu do swoich potrzeb
+					</li>
+					<li>
+						Kompletne środowisko graficzne z zestawem potrzebnych aplikacji, takich jak menedżer plików,
+						przeglądarka internetowa, odtwarzacz multimediów, klient poczty elektronicznej, książka
+						adresowa, przeglądarka dokumentów PDF menedżer fotografii
+					</li>
+				</ul>
+				<p>
+					Mimo iż oba te środowiska graficzne mają podobne cele, radzą sobie z nimi całkiem inaczej. KDE stara
+					się, aby aplikacje były jak najbardziej konfigurowalne, aby można było w nie ingerować i aby mogły
+					ze sobą w łatwy sposób kooperować. GNOME z drugiej strony, koncentrując się na kluczowych zadaniach
+					(zgodnie z filozofią making things just work), stara się, aby całość była jak najprostsza w
+					obsłudze. Każde z tych środowisk przyciąga inny rodzaj użytkowników i tworzy inną społeczność
+					deweloperów.
+				</p>
+			</article>
+			<br />
+		</div>
+		<footer class="footer text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<span class="copyright">© 2020 All rights reserved.</span>
+					</div>
+					<div class="col-md-7">
+						<ul class="list-inline text-center">
+							<li class="Icon list-inline-item">
+								<a target="_blank" href="https://twitter.com/?lang=pl">
+									<i class="icon-twitter-circled"></i>
+								</a>
+							</li>
+							<li class="Icon list-inline-item">
+								<a target="_blank" href="https://pl-pl.facebook.com/">
+									<i class="icon-facebook-circled"></i>
+								</a>
+							</li>
+							<li class="Icon list-inline-item">
+								<a target="_blank" href="https://github.com/BoLubie808/BoLubie808.github.io.git">
+									<i class="icon-github-circled-alt2"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Optional Bootstrap JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

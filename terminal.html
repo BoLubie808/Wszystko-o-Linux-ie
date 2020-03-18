@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<title>Wszystko o Linux'ie</title>
+	<!--[if gte IE 9]
+		<style type="text/css">.gradient {filter: none;}</style>
+		<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<![endif]-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Kacper Gajda">
+	<meta name="description" content="Strona poświęcona GNU/Linux">
+	<meta name="keywords"
+		content="Linux, GNU, Otwarte oprogramowanie, system operacyjny, GNU/Linux, Dystrybucje Linuksa, Linus Torvalds, Xfce, GNOME, KDE, Tiling, środowisko graficzne, Terminal, UNIX, Oprogramowanie, menedżer okien, X Window System, GTK+, GDK">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="fontello/fontello.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="icon" href="iconfinder_Terminal_566022.png" type="image/png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script>
+		jQuery(function ($) {
+			$.scrollTo(0);
+
+			$('.scrollup').click(function () {
+				$.scrollTo($('body'), 1500);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="iconfinder_Terminal_566022.png" width="50" height="50"
+						class="Icon d-inline-block mr-1 align-bottom" alt="Terminal" style="margin-top: 20px;" />
+				</a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+					data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+					aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i></button>
+				<div style="margin-right: 20%;" class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="dystrybucje.html">Dystrybucje</a></li>
+						<li class="nav-item"><a class="nav-link" href="terminal.html">Terminal</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Page Header -->
+		<header class="masthead">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-10 mx-auto">
+						<div class="site-heading">
+							<br />
+							<h1 style="margin-right: 25%;">Terminal</h1>
+							<br />
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<a href="#" class="Icon scrollup"></a>
+			<div class="columns">
+				<div class="column">
+					<a href="index.html">
+						<img class="Icon col-lg-7 col-md-10" src="iconfinder_desktop_1287529.png" title="Home" />
+					</a>
+				</div>
+				<div class="column">
+					<a href="terminal.html">
+						<img class="Icon col-lg-7 col-md-10" src="iconfinder_gksu-root-terminal_3246759.png"
+							title="Terminal" alt="Terminal" />
+					</a>
+				</div>
+				<div class="column">
+					<a href="dystrybucje.html">
+						<img class="Icon col-lg-7 col-md-10" src="iconfinder_download_1055068.png" title="Dystrybucje"
+							alt="Dystrybucje" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h2>
+				Kilka słów o Terminalu
+			</h2>
+			<article>
+				<p>
+					W systemach Unix oraz w systemach uniksopodobnych polecenia są często programami uruchamianymi z
+					wiersza poleceń powłoki systemowej. Często różne powłoki mają dodatkowo wbudowane własne
+					implementacje niektórych poleceń; np. zawierają wersję polecenia dostępnego jako /bin/echo. To,
+					która wersja polecenia będzie wykonana domyślnie zależy od tego, która powłoka jest używana oraz od
+					konfiguracji systemu.
+				</p>
+				<br />
+			</article>
+			<article>
+				<figure>
+					<img class="col-md-6 col-lg-6" src="terminal.png" align="right" />
+				</figure>
+			</article>
+			<article>
+				<h2>
+					Pomoc
+				</h2>
+				<ul>
+					<li>
+						<h3>
+							man
+						</h3>wyświetla stronę manuala dla polecenia
+					</li>
+					<br />
+					<li>
+						<h3>
+							help
+						</h3>każdy program ma opcję --help lub -h, która wyświetla krótką pomoc.
+						<ul>
+							<li>
+								cp --help - wyświetla pomoc dotyczącą kopiowania
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<br />
+				<hr />
+				<h2>
+					Logowanie
+				</h2>
+				<ul>
+					<li>
+						<h3>
+							logout
+						</h3>komenda służąca do wylogowania się z terminala
+					</li>
+					<br />
+					<li>
+						<h3>
+							exit
+						</h3>komenda służąca do zakończenia procesu powłoki
+					</li>
+					<br />
+					<li>
+						<h3>
+							passwd
+						</h3>zmień hasło użytkownika
+					</li>
+					<br />
+					<li>
+						<h3>
+							^D
+						</h3>Ctrl-D wysyła komunikat EOF do terminala Oznacza koniec wprowadzania danych. W powłoce bash
+						skutkuje zazwyczaj zamknięciem terminala
+					</li>
+					<br />
+					<li>
+						<h3>
+							whoami
+						</h3>wyświetla nazwę użytkownika
+					</li>
+					<br />
+					<li>
+						<h3>
+							id
+						</h3>wyświetla obecną nazwę i grupę użytkownika oraz ich numery
+					</li>
+					<br />
+					<li>
+						<h3>
+							su
+						</h3>komenda do przelogowania się jako inny użytkownik Pozwala, w tym samym terminalu,
+						zmienić uprawnienia do wykonywania komend chwilowo na innego użytkownika
+						<ul>
+							<br />
+							<li>
+								su username - zmień użytkownika na użytkownika o nazwie username
+							</li>
+							<li>
+								su - username - zmień użytkownika, wyczyść zmienne środowiskowe i ustaw nowe wartości
+								zmiennych HOME, SHELL, USER, LOGNAME, PATH
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							finger
+						</h3>wypisuje wszystkich użytkowników obecnie zalogowanych na danej maszynie (i ich
+						terminale)
+						<ul>
+							<br />
+							<li>
+								finger @komputer - użytkownicy zalogowani na komputerze o nazwie komputer
+							</li>
+							<li>
+								finger username - wypisuje informacje o użytkowniku username i wszystkie terminale na
+								których jest zalogowany
+							</li>
+							<li>
+								finger janek - wypisuje informacje o wszystkich użytkownikach o imieniu janek
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							w
+						</h3>podobnie jak finger wypisuje zalogowanych użytkowników i ich aktywne terminale
+					</li>
+					<br />
+					<hr />
+				</ul>
+				<h2>
+					Podstawowe komendy
+				</h2>
+				<ul>
+					<li>
+						<h3>
+							cd
+						</h3>zmienia aktualny katalog (od change directory)
+						<ul>
+							<br />
+							<li>
+								cd dirname - zmienia aktualny katalog na dirname
+							</li>
+							<li>
+								cd dir1/dir2/dir3 - wchodzi do katalogu dir3, który jest w katalogu dir2, który jest
+								w dir1
+							</li>
+							<li>
+								cd - z dowolnego miejsca, zmienia katalog na domowy
+							</li>
+							<li>
+								cd .. - przechodzi do katalogu o jeden wyższego w drzewie katalogów niż obecny
+							</li>
+							<li>
+								cd /home/dir - z dowolnego miejsca, przechodzi do katalogu zaczynając od początku
+								drzewa: /
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							pwd
+						</h3>wypisuje ścieżkę obecnego katalogu (od print working directory)
+					</li>
+					<br />
+					<li>
+						<h3>
+							ls
+						</h3>listuje katalog
+						<ul>
+							<br />
+							<li>
+								ls - listuje katalog . (ls .)
+							</li>
+							<li>
+								ls plik1 plik2 plik3 - listuje tylko wymienione pliki
+							</li>
+							<li>
+								ls *.txt - wypisze wszystkie pliki o nazwie kończącej się na .txt
+							</li>
+							<li>
+								ls katalog1 katalog2 - listuje wymienione katalogi
+							</li>
+							<li>
+								ls -l - szczegółowa lista
+							</li>
+							<li>
+								ls -a - wypisuje również ukryte pliki (czyli te których nazwa zaczyna się kropką)
+							</li>
+							<li>
+								ls -R - listuje katalogi rekursywnie (czyli wyświetla również zawartość podkatalogów)
+							</li>
+							<li>
+								ls -d - wyświetla tylko nazwy katalogów, tak jak zwyczajnych plików, czyli nie listuje
+								ich zawartości
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							cat
+						</h3>wypisuje wszystkie podane mu pliki na standardowe wyjście
+						<ul>
+							<br />
+							<li>
+								cat plik - jeśli nie przekierujemy standardowego wyjścia do innego pliku (>, >>) lub
+								programu (|), to wypisze plik na ekran
+							</li>
+							<li>
+								cat plik1 plik2 plik3 - wypisze po kolei zawartość wszystkich plików
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							tac
+						</h3>wypisuje wszystkie podane mu pliki na standardowe wyjście, ale w odwraca kolejność linii
+						<ul>
+							<br />
+							<li>
+								tac plik1 plik2 - wypisze połączone oba pliki, od ostatniej do pierwszej linii
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							echo
+						</h3>powtarza na standardowym wyjściu słowa podane w argumencie
+						<ul>
+							<br />
+							<li>
+								echo costam wypisz, czy echo "costam wypisz" - wypisze costam wypisz i zakończy
+								znakiem nowej linii
+							</li>
+							<li>
+								echo -n "costam wypisz" - po wypisaniu argumentów, nie wypisze znaku nowej linii
+							</li>
+							<li>
+								echo $HOME - wypisuje zawartość zmiennej środowiskowej HOME
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							wc
+						</h3>liczy linie, słowa, i znaki w pliku gdy nie podamy argumentu, czyta ze standardowego
+						wejścia
+						<ul>
+							<br />
+							<li>
+								cat plik1 plik2 | wc -l - policzy wszystkie linie z połączonych plików plik1 plik2
+							</li>
+							<li>
+								wc plik - wypisze linie słowa i znaki oraz nazwę pliku
+							</li>
+							<li>
+								wc -m - tylko znaki (lub --chars)
+							</li>
+							<li>
+								wc -l - tylko linie (lub --lines)
+							</li>
+							<li>
+								wc -w - tylko słowa (lib --words)
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							less
+						</h3>wygodne i szybkie przeglądanie plików tekstowych
+						<ul>
+							<br />
+							<li>
+								less plik - wyświetla zawartość pliku i pozwala przewijać strony (q-wyjście)
+							</li>
+						</ul>
+					</li>
+					<br />
+					<hr />
+				</ul>
+				<h2>
+					Pliki i katalogi
+				</h2>
+				<ul>
+					<li>
+						<h3>
+							touch
+						</h3>zmienia czas dostępu i modyfikacji pliku, lub jeśli plik nie istnieje - tworzy go
+					</li>
+					<br />
+					<li>
+						<h3>
+							cp
+						</h3>kopiuje plik
+						<ul>
+							<br />
+							<li>
+								cp plik1 plik2 - stworzy ./plik2 identyczny z plik1
+							</li>
+							<li>
+								cp plik3 ../katalog/jakis/ - stworzy plik ../katalog/jakis/plik3
+							</li>
+							<li>
+								cp pom.* podkatalog/ - skopiuje wszystkie pliki zaczynające się na pom. do
+								./podkatalog/
+							</li>
+							<li>
+								cp plik5 ~/katalog/jakis/plik - stworzy plik ~/katalog/jakis/plik
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							mv
+						</h3>przesuwa plik, służy również do zmiany nazwy
+						<ul>
+							<br />
+							<li>
+								mv plik1 plik2 - zmieni nazwę pliku z ./plik1 na plik2
+							</li>
+							<li>
+								mv plik3 ../katalog/jakis/ - przesunie plik do ../katalog/jakis/plik3
+							</li>
+							<li>
+								mv plik4 podkatalog/ - przesunie plik ./podkatalog/plik4
+							</li>
+							<li>
+								mv plik5 ~/katalog/jakis/plik - przesunie i zmieni nazwę ~/katalog/jakis/plik
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							rm
+						</h3>kasuje plik
+						<ul>
+							<br />
+							<li>
+								rm -r katalog - kasuje wszystko w katalogu i wszystkie jego podkatalogi
+							</li>
+							<li>
+								rm -f plik - nie pyta się czy skasować
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							mkdir
+						</h3>tworzy katalog
+						<ul>
+							<br />
+							<li>
+								mkdir moj_nowy_katalog
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							rmdir
+						</h3>usuwa pusty katalog
+						<ul>
+							<br />
+							<li>
+								rmdir katalog
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							chmod
+						</h3>zmienia prawa dostępu do pliku grupy użytkowników: u - user, g - group, o - others, a -
+						all prawa dostępu: r - read, w - write, x - execute
+						<ul>
+							<br />
+							<li>
+								chmod o+r plik - udziel innym prawo do czytania pliku
+							</li>
+							<li>
+								chmod a-x plik - zabierz wszystkim prawo do wykonywania pliku
+							</li>
+							<li>
+								chmod g=rw plik - ustaw prawa do czytania i pisania dla swojej grupy
+							</li>
+							<li>
+								chmod -R go+w katalog - ustawia prawa wszystkim plikom w katalogu i jego podkatalogach
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							locate
+						</h3>wypisuje gdzie ostatnio, na tym komputerze, był widziany plik o podanej nazwie
+					</li>
+					<br />
+					<li>
+						<h3>
+							find
+						</h3>przejrzyj katalog w poszukiwaniu danego pliku
+						<ul>
+							<br />
+							<li>
+								find . -name raport.txt
+							</li>
+							<li>
+								find /home/user -name "rap*rt"
+							</li>
+						</ul>
+					</li>
+					<br />
+					<hr />
+				</ul>
+				<h2>
+					Procesy
+				</h2>
+				<ul>
+					<li>
+						<h3>
+							ps
+						</h3>wypisuje procesy uruchomione na komputerze
+						<ul>
+							<br />
+							<li>
+								ps - wyświetla procesy uruchomione przez użytkownika
+							</li>
+							<li>
+								ps a - wyświetl również procesy innych użytkowników
+							</li>
+							<li>
+								ps -l, ps -f, ps -F - więcej informacji o procesach
+							</li>
+							<li>
+								ps f - wyświetla drzewo zależności procesów
+							</li>
+							<li>
+								ps --help
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							kill
+						</h3>zabija podany proces PID - jest to numer identyfikacyjny procesu, można go odczytać np.
+						używając polecenia ps
+						<ul>
+							<br />
+							<li>
+								kill PID - wysyła do procesu o numerze PID sygnał do przerwania procesu
+							</li>
+							<li>
+								kill -KILL PID - zabija proces bez pytania
+							</li>
+						</ul>
+					</li>
+					<br />
+					<hr />
+				</ul>
+				<h2>
+					Dyski
+				</h2>
+				<ul>
+					<li>
+						<h3>
+							df
+						</h3>wypisuje rozmiary i ilość dostępnego miejsca na zamontowanych dyskach
+						<ul>
+							<br />
+							<li>
+								df /dev/sda1 - ogranicz wyniki tylko do jednej partycji
+							</li>
+							<li>
+								df -h - wyświetl rozmiary w wygodnych dla użytkownika jednostkach
+							</li>
+							<li>
+								df -m - rozmiary w megabajtach
+							</li>
+						</ul>
+					</li>
+					<br />
+					<li>
+						<h3>
+							du
+						</h3>policz rozmiary katalogów i plików zawartych w podanym katalogu
+						<ul>
+							<br />
+							<li>
+								du - rozmiar obecnego katalogu
+							</li>
+							<li>
+								du katalog - policz rozmiar podanego katalogu
+							</li>
+							<li>
+								du -s - wypisz tylko sumę, a nie rozmiary poszczególnych podkatalogów
+							</li>
+							<li>
+								du -sm - wypisz tylko sumę dla każdego katalogu i podaj rozmiar w megabajtach
+							</li>
+							<li>
+								du -sm dir | sort -n - posortuj wyniki od najmniejszego do największego z podanych
+								katalogów
+							</li>
+						</ul>
+					</li>
+					<br />
+					<hr />
+				</ul>
+				<h2>
+					Sieć
+				</h2>
+				<ul>
+					<li>
+						<h3>
+							ping
+						</h3>program diagnostyczny sprawdzający czy istnieje połączenie sieciowe z danym komputerem
+						<br />
+						<br />
+					</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+	<footer class="footer text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<span class="copyright">© 2020 All rights reserved.</span>
+				</div>
+				<div class="col-md-7">
+					<ul class="list-inline text-center">
+						<li class="Icon list-inline-item">
+							<a target="_blank" href="https://twitter.com/?lang=pl">
+								<i class="icon-twitter-circled"></i>
+							</a>
+						</li>
+						<li class="Icon list-inline-item">
+							<a target="_blank" href="https://pl-pl.facebook.com/">
+								<i class="icon-facebook-circled"></i>
+							</a>
+						</li>
+						<li class="Icon list-inline-item">
+							<a target="_blank" href="https://github.com/BoLubie808/BoLubie808.github.io.git">
+								<i class="icon-github-circled-alt2"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Optional Bootstrap JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

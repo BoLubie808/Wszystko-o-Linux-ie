@@ -1,0 +1,352 @@
+body {
+  font: 20px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #6e6e6e;
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.5em;
+  margin-top: 15px;
+  color: #6e6e6e;
+}
+
+p a {
+  text-decoration: none;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+h2, h3 {
+  color: #658ce2;
+}
+
+a h2 {
+  color: #6e6e6e;
+}
+
+a {
+  color: #ffffff;
+  transition: .4s ease-in-out;
+}
+
+.columns {
+  display: inline;
+  text-align: center;
+}
+
+.column {
+  width: 33.3%;
+  float: right;
+  padding-bottom: 40px;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #658ce2;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #658ce2;
+  text-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2a2b6b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2a2b6b;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background-color: #2a2b6b;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+#mainNav {
+  position: absolute;
+  border-bottom: 1px solid #e9ecef;
+  background-color: white;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 800;
+  color: #343a40;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 13px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+#mainNav .navbar-nav>li.nav-item>a {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    border-bottom: 1px solid transparent;
+    background: transparent;
+  }
+
+  #mainNav .navbar-brand {
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, .8);
+  }
+
+  #mainNav .navbar-brand:focus,
+  #mainNav .navbar-brand:hover {
+    color: rgba(255, 255, 255, .8);
+  }
+
+  #mainNav .navbar-nav>li.nav-item>a {
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  #mainNav .navbar-nav>li.nav-item>a:focus,
+  #mainNav .navbar-nav>li.nav-item>a:hover {
+    color: rgba(255, 255, 255, .5);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    transition: background-color .2s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+  }
+
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -67px;
+    transition: transform .2s;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, .9);
+  }
+
+  #mainNav.is-fixed .navbar-brand {
+    color: #212529;
+  }
+
+  #mainNav.is-fixed .navbar-brand:focus,
+  #mainNav.is-fixed .navbar-brand:hover {
+    color: #658ce2;
+  }
+
+  #mainNav.is-fixed .navbar-nav>li.nav-item>a {
+    color: #212529;
+  }
+
+  #mainNav.is-fixed .navbar-nav>li.nav-item>a:focus,
+  #mainNav.is-fixed .navbar-nav>li.nav-item>a:hover {
+    color: #658ce2;
+  }
+
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+header.masthead {
+  margin-bottom: 65px;
+  background: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url(—Pngtree—hd\ box\ abstract\ background_524031.jpg);
+  /* https://pngtree.com/free-backgrounds" free background photos from pngtree.com */
+}
+
+
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 200px 0;
+  }
+}
+
+header.masthead .page-heading,
+header.masthead .site-heading {
+  text-align: center;
+}
+
+header.masthead .page-heading h1,
+header.masthead .site-heading h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+header.masthead .post-heading h1 {
+  font-size: 35px;
+}
+
+header.masthead .post-heading .meta,
+header.masthead .post-heading .subheading {
+  line-height: 1.1;
+  display: block;
+}
+
+header.masthead .post-heading .subheading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0 30px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header.masthead .post-heading .meta {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+
+header.masthead .post-heading .meta a {
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .post-heading h1 {
+    font-size: 55px;
+  }
+
+  header.masthead .post-heading .subheading {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .distrosimg {
+    float: right;
+  }
+}
+
+footer {
+  padding: 70px 0 50px;
+  background: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url(—Pngtree—hd\ box\ abstract\ background_524031.jpg);
+  /* https://pngtree.com/free-backgrounds" free background photos from pngtree.com */
+}
+
+footer .list-inline {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  line-height: 90px;
+  color: #FFF;
+}
+
+footer .footer-menu li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.distros img {
+  margin-right: 15px;
+  transition: .4s ease-in-out;
+}
+
+.Icon {
+  transition: .4s ease-in-out;
+}
+
+.Icon:hover {
+  transform: scale(1.2);
+}
+
+.scrollup {
+  width: 48px;
+  height: 48px;
+  background-image: url("iconfinder_arrow-up-01_186407.png");
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  opacity: .8;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.scrollup:hover {
+  opacity: .4;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+.gui {
+  transition: ease-in-out 0.4s;
+}
+
+.gui:hover {
+  opacity: 0.6;
+}
